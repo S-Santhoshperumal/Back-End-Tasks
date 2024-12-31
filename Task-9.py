@@ -27,17 +27,17 @@ def main():
     value1=int(input('enter your first number : '))
     value2=int(input('enter your second number : '))
     
-    if(symbol_i=='+'): 
+    if(symbol_input=='+'): 
         print(symbol[symbol_input](value1,value2))
-    elif(symbol=='-'): 
+    elif(symbol_input=='-'): 
         print(symbol[symbol_input](value1,value2))
-    elif(symbol=='*'): 
+    elif(symbol_input=='*'): 
         print(symbol[symbol_input](value1,value2))
-    elif(symbol=='/'): 
+    elif(symbol_input=='/'): 
         print(symbol[symbol_input](value1,value2))
-    elif(symbol=='//'): 
+    elif(symbol_input=='//'): 
         print(symbol[symbol_input](value1,value2))
-    elif(symbol=='**'): 
+    elif(symbol_input=='**'): 
         print(symbol[symbol_input](value1,value2))
     else: 
         print('your had entered a wrong one')
