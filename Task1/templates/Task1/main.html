@@ -1,0 +1,21 @@
+{% extends 'posts/base.html' %}
+{% block titlePage %}
+Blazin' Blog !
+{% endblock titlePage %}
+{% block content %}
+
+<h1>Post</h1>
+<ul>
+    {% for post in object_list %}
+    <li> <a href="{% url 'post-detail' post.pk %} " > <b> {{post.title}} </b></a> - <i> {{post.author.first_name}} {{post.author.last_name}} </i> <br>
+        {{post.content}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
+
+
+
+
+
+
